@@ -1,0 +1,20 @@
+{
+  "name": "accordion-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sui-bundler build -C",
+    "start": "sui-bundler dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@s-ui/bundler": "^2.14.0"
+  }
+}

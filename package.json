@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "generate:stateful": "node ./scripts/stateful.js",
+    "generate:stateless": "node ./scripts/stateless.js",
     "build": "sui-bundler build -C",
     "start": "sui-bundler dev"
   },
@@ -11,10 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "normalize.css": "^8.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
-    "@s-ui/bundler": "^2.14.0"
+    "@s-ui/bundler": "^2.14.0",
+    "genmite": "^1.1.6"
   }
 }

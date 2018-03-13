@@ -1,0 +1,48 @@
+@import './../../../stylesheets/tools/mixins/gradient';
+
+$accordion-text-color: #ffffff;
+$accordion-padding: 1.25em;
+$accordion-margin-left-text: 2.5em;
+$accordion-left-gradient-color: #5494f7;
+$accordion-right-gradient-color: #65b2fb;
+
+.Accordion-title {
+  color: $accordion-text-color;
+  padding: $accordion-padding;
+
+  &:last-of-type {
+    padding-bottom: $accordion-padding;    
+  }
+
+  &.is-active {
+    @include horizontal-gradient($accordion-left-gradient-color, $accordion-right-gradient-color);
+  }
+}
+
+.Accordion-description {
+  @include horizontal-gradient($accordion-left-gradient-color, $accordion-right-gradient-color);  
+  color: $accordion-text-color;
+  padding-bottom: $accordion-padding;
+}
+
+.Accordion-title:not(.is-active) + .Accordion-description {
+  opacity: 0;
+  position: absolute;
+  top: -9999px;
+}
+
+.Accordion-description .Accordion-text {
+  line-height: 1.5em;
+  margin-left: $accordion-margin-left-text;
+}
+
+.Accordion-separator {
+  background: $accordion-text-color;
+  height: 1px;
+  opacity: 0.8;
+  width: 100%;
+
+  &:last-of-type {
+    height: 0;
+  }
+}

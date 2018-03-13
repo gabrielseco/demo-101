@@ -1,0 +1,19 @@
+@import './../../../stylesheets/tools/mixins/flexbox';
+
+$header-text-color: #ffffff;
+$header-background-color: #2d2e3f;
+$header-height: 4.688em;
+$header-padding: 0.8em;
+
+.Header {
+  @include flexbox();
+  @include align-content(center);
+  background: $header-background-color;
+  height: $header-height;
+  opacity: 0.9;
+  padding: $header-padding;
+
+  &-title {
+    color: $header-text-color;
+  }
+}

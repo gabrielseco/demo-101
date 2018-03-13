@@ -1,0 +1,21 @@
+@import './../../../stylesheets/tools/mixins/flexbox';
+
+$footer-background-color: #2d2e3f;
+$footer-text-color: #ffffff;
+$footer-height: 4.688em;
+$footer-padding: 0.8em;
+
+.Footer {
+  @include flexbox();
+  @include align-content(center);
+  @include justify-content(space-between);
+  background: $footer-background-color;
+  color: $footer-text-color;
+  height: $footer-height;
+  opacity: 0.9;
+  padding: $footer-padding;
+
+  &-icon {
+    margin: 0 4px;
+  }
+}

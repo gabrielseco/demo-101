@@ -1,0 +1,20 @@
+/* VARIABLES */
+
+@import './../stylesheets/settings/all';
+
+/* TOOLS */
+
+@import './../stylesheets/tools/mixins/flexbox';
+
+/* GENERICS */
+
+@import '~normalize.css/normalize.css';
+@import './../stylesheets/generic/reset';
+
+/* BASE */
+
+@import './../stylesheets/base/page';
+
+/* UTILS */
+
+@import './../stylesheets/utils/flexbox';
